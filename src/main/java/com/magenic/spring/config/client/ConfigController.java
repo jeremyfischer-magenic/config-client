@@ -14,9 +14,8 @@ public class ConfigController {
 	@Autowired
 	private Environment environment;
 
-	@RequestMapping(value = "/wowwie/{param}", method = RequestMethod.GET)
-	public @ResponseBody String getConfig(@PathVariable String param) {
-		String result = environment.getProperty(param);
-		return String.format("Recieved property [%s]", result);
+	@RequestMapping(value = "/config/{key}", method = RequestMethod.GET)
+	public @ResponseBody String getConfig(@PathVariable String key) {
+		return environment.getProperty(key);
 	}
 }
