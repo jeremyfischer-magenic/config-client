@@ -1,6 +1,6 @@
 ---
 applications:
   - name: config-client
-    path: target/configclient-0.0.1-SNAPSHOT.jar
+    path: target/config-client-0.0.1-SNAPSHOT.jar
 services:
   - config-server
