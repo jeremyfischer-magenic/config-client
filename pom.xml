@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.magenic.spring.config</groupId>
-	<artifactId>configclient</artifactId>
+	<artifactId>config-client</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>configclient</name>
+	<name>config-client</name>
 	<description>can get configuration parameters from config servers</description>
 
 	<properties>
@@ -34,14 +34,12 @@
 			<artifactId>spring-cloud-services-dependencies</artifactId>
 			<version>2.1.2.RELEASE</version>
 			<type>pom</type>
-			<scope>import</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-dependencies</artifactId>
 			<version>Greenwich.RELEASE</version>
 			<type>pom</type>
-			<scope>import</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
